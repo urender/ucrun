@@ -273,7 +273,7 @@ uc_uloop_process(uc_vm_t *vm, size_t nargs)
 static void
 ucode_init_ubus(ucrun_ctx_t *ucrun)
 {
-	uc_value_t *ubus = ucv_object_get(ucrun->scope, "ubus", NULL);
+	uc_value_t *ubus = ucv_object_get(ucrun->scope, "publish", NULL);
 
 	if (!ubus)
 		return;
